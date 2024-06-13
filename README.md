@@ -13,7 +13,7 @@ These variables are required to store and host the generated WAV files.
 ### 1. **Clone the Repository**
 
 ```sh
-git clone https://github.com/your-username/openvoice-worker.git
+git clone https://github.com/drvpn/runpod_serverless_openvoice_worker.git
 cd openvoice-worker
 ```
 
@@ -41,7 +41,6 @@ You can invoke the function with a JSON payload specifying the text, language, a
 ```
 
 Use RunPod's interface or an HTTP client to send this payload to the deployed function.
-
 
 # Input
 - **text**: The text the AI will transcribe
