@@ -1,3 +1,9 @@
+# RunPod Serverless OpenVoice Worker
+
+![Banner](resources/Banner.png)
+
+This project allows users to install OpenVoice, an AI speech model that can clone voices, on RunPod serverless platform.
+
 ## Environment Variables
 
 To run this application on RunPod serverless, you need to set the following environment variables:
