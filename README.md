@@ -73,6 +73,19 @@ To override default values, you can set the following (optional) environment var
 - `DEFAULT_VOICE_URL`: Sets new default for voice_url 
 - `DEFAULT_SPEED`: Sets new default for speed
 
+## Example return value
+```sh
+{
+  "delayTime": 789,
+  "executionTime": 16608,
+  "id": "your-unique-id-will-be-here",
+  "output": {
+    "output_audio_url": "https://mybucket.nyc3.digitaloceanspaces.com/OpenVoice/OpenVoice_20240613_213640_i7bzrf_32f210.wav"
+  },
+  "status": "COMPLETED"
+}
+```
+
 # Handler Explanation
 
 The `handler.py` script orchestrates the following tasks:
