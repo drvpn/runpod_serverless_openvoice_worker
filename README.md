@@ -25,7 +25,7 @@ These variables are required to store and host the generated WAV files.
 
 ```sh
 git clone https://github.com/drvpn/runpod_serverless_openvoice_worker.git
-cd openvoice-worker
+cd runpod_serverless_openvoice_worker
 ```
 
 2. `Build and Push Docker Image`
