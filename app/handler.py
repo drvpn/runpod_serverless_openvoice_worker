@@ -279,7 +279,7 @@ def handler(job):
 if __name__ == '__main__':
 
     # Stored model
-    url = 'https://myshell-public-repo-hosting.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip'
+    url = 'https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip'
     target_dir = '/app'
     zip_filename = os.path.join(target_dir, 'checkpoints_v2_0417.zip')
 
