@@ -25,6 +25,7 @@ import torch
 from openvoice import se_extractor
 from openvoice.api import ToneColorConverter
 from melo.api import TTS
+import nltk
 
 ''' Suppress all warnings (FOR PRODUCTION) '''
 warnings.filterwarnings("ignore")
@@ -262,7 +263,7 @@ def handler(job):
     """
     speed = job_input.get('speed', os.getenv('DEFAULT_SPEED', 1.0))
 
-    reference_speaker, error = download_file(voice_url, 'tmp/video.mp4')
+    reference_speaker, error = download_file(voice_url, 'tmp/audio.mp3')
     if error:
         print(f'ERROR in download_file: {error}')
         sys.exit(1)
@@ -277,6 +278,8 @@ def handler(job):
             }
 
 if __name__ == '__main__':
+
+    nltk.download('averaged_perceptron_tagger_eng')
 
     # Stored model
     url = 'https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip'
