@@ -45,7 +45,7 @@ You can invoke the function with a JSON payload specifying the text, language, a
     "input": {
         "text": "Hello, world!",
         "voice_url": "https://example.com/path/to/voice.mp3",
-        "language": "EN-NEWEST",
+        "language": "EN",
         "speed": 1.0
     }
 }
@@ -56,14 +56,14 @@ Use RunPod's interface or an HTTP client to send this payload to the deployed fu
 # Input
 - `text`: The text the AI will transcribe
 - `voice_url`: A URL to a wav file. This file should contain spoken words recorded in a quite environment.  This will become the voice of the speaker.
-- `language`: The language the speaker will use when transcribing your text. Choose on of the following ['`EN`', '`EN-AU`', '`EN-BR`', '`EN-INDIA`', '`EN-US`', '`EN-DEFAULT`', '`EN-NEWEST`', '`ES`', '`FR`', '`ZH`', '`JP`', '`KR`']
+- `language`: The language the speaker will use when transcribing your text. Choose on of the following ['`EN`', '`EN-AU`', '`EN-BR`', '`EN-INDIA`', '`EN-US`', '`EN-DEFAULT`', '`ES`', '`FR`', '`ZH`', '`JP`', '`KR`']
 - `speed`: Speed is the pace the speaker will use when speaking.
 
 # Default values
 
 - `text`: required `no default`
 - `voice_url`: required `no default`
-- `language`: default value is `EN-NEWEST`
+- `language`: default value is `EN`
 - `speed`: default value is `1.0`
 
 To override default values, you can set the following (optional) environment variables:
