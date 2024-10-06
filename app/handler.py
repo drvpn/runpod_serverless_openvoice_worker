@@ -239,11 +239,11 @@ def handler(job):
     # language option - Language text is written in
     """
     OPTION: language 
-    DEFAULT VALUE: EN_NEWEST 
-    AVAILABLE OPTIONS: One of ['EN', 'EN-AU', 'EN-BR', 'EN-INDIA', 'EN-US', 'EN-DEFAULT', 'EN-NEWEST', 'ES', 'FR', 'ZH', 'JP', 'KR']
+    DEFAULT VALUE: EN 
+    AVAILABLE OPTIONS: One of ['EN', 'EN-AU', 'EN-BR', 'EN-INDIA', 'EN-US', 'EN-DEFAULT', ES', 'FR', 'ZH', 'JP', 'KR']
     *Override default value using ENV variable DEFAULT_LANGUAGE 
     """
-    language = job_input.get('language', os.getenv('DEFAULT_LANGUAGE', 'EN_NEWEST'))
+    language = job_input.get('language', os.getenv('DEFAULT_LANGUAGE', 'EN'))
 
     # voice_url - URL to an mp3 file with the desired speaker's voice recorded
     """
